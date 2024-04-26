@@ -1,0 +1,255 @@
+{
+  "@odata.context": "$metadata#Books(address(),authorid())",
+  "value": [
+    {
+      "ID": "1ed26b20-039e-11ef-9afd-325096b39f47",
+      "title": "The Great Gatsby",
+      "stock": 100,
+      "author": "F. Scott Fitzgerald",
+      "genre": "Fiction",
+      "publicationYear": 1925,
+      "price": 10.99,
+      "authorid_ID": "39d6a5a8-039e-11ef-8399-325096b39f47",
+      "address_ID": "5a1460ee-039e-11ef-9f21-325096b39f47",
+      "authorid": {
+        "ID": "39d6a5a8-039e-11ef-8399-325096b39f47",
+        "qualification": "Bachelor's Degree",
+        "DOB": "1990-05-15",
+        "age": 31
+      },
+      "address": {
+        "ID": "5a1460ee-039e-11ef-9f21-325096b39f47",
+        "city": "New York",
+        "distric": null,
+        "state": "New York",
+        "country": "United States",
+        "pincode": 10001
+      }
+    },
+    {
+      "ID": "1ed26cf6-039e-11ef-9771-325096b39f47",
+      "title": "To Kill a Mockingbird",
+      "stock": 150,
+      "author": "Harper Lee",
+      "genre": "Fiction",
+      "publicationYear": 1960,
+      "price": 12.99,
+      "authorid_ID": "39d6a76a-039e-11ef-a0bf-325096b39f47",
+      "address_ID": "5a1462b0-039e-11ef-84fd-325096b39f47",
+      "authorid": {
+        "ID": "39d6a76a-039e-11ef-a0bf-325096b39f47",
+        "qualification": "Master's Degree",
+        "DOB": "1985-10-22",
+        "age": 36
+      },
+      "address": {
+        "ID": "5a1462b0-039e-11ef-84fd-325096b39f47",
+        "city": "Los Angeles",
+        "distric": null,
+        "state": "California",
+        "country": "United States",
+        "pincode": 90001
+      }
+    },
+    {
+      "ID": "1ed26d64-039e-11ef-af7d-325096b39f47",
+      "title": "1984",
+      "stock": 120,
+      "author": "George Orwell",
+      "genre": "Science Fiction",
+      "publicationYear": 1949,
+      "price": 9.99,
+      "authorid_ID": "39d6a7d8-039e-11ef-b43c-325096b39f47",
+      "address_ID": "5a14631e-039e-11ef-bfc0-325096b39f47",
+      "authorid": {
+        "ID": "39d6a7d8-039e-11ef-b43c-325096b39f47",
+        "qualification": "High School Diploma",
+        "DOB": "1995-02-08",
+        "age": 27
+      },
+      "address": {
+        "ID": "5a14631e-039e-11ef-bfc0-325096b39f47",
+        "city": "Chicago",
+        "distric": null,
+        "state": "Illinois",
+        "country": "United States",
+        "pincode": 60601
+      }
+    },
+    {
+      "ID": "1ed26dbe-039e-11ef-944b-325096b39f47",
+      "title": "The Catcher in the Rye",
+      "stock": 80,
+      "author": "J.D. Salinger",
+      "genre": "Fiction",
+      "publicationYear": 1951,
+      "price": 11.99,
+      "authorid_ID": "39d6a828-039e-11ef-92f8-325096b39f47",
+      "address_ID": "5a14636e-039e-11ef-b727-325096b39f47",
+      "authorid": {
+        "ID": "39d6a828-039e-11ef-92f8-325096b39f47",
+        "qualification": "Ph.D.",
+        "DOB": "1978-07-30",
+        "age": 43
+      },
+      "address": {
+        "ID": "5a14636e-039e-11ef-b727-325096b39f47",
+        "city": "Houston",
+        "distric": null,
+        "state": "Texas",
+        "country": "United States",
+        "pincode": 77001
+      }
+    },
+    {
+      "ID": "1ed26e04-039e-11ef-a03d-325096b39f47",
+      "title": "Brave New World",
+      "stock": 90,
+      "author": "Aldous Huxley",
+      "genre": "Science Fiction",
+      "publicationYear": 1932,
+      "price": 8.99,
+      "authorid_ID": "39d6a86e-039e-11ef-ac55-325096b39f47",
+      "address_ID": "5a1463b4-039e-11ef-9851-325096b39f47",
+      "authorid": {
+        "ID": "39d6a86e-039e-11ef-ac55-325096b39f47",
+        "qualification": "Bachelor's Degree",
+        "DOB": "1988-11-03",
+        "age": 33
+      },
+      "address": {
+        "ID": "5a1463b4-039e-11ef-9851-325096b39f47",
+        "city": "Phoenix",
+        "distric": null,
+        "state": "Arizona",
+        "country": "United States",
+        "pincode": 85001
+      }
+    },
+    {
+      "ID": "1ed26e4a-039e-11ef-aa92-325096b39f47",
+      "title": "Animal Farm",
+      "stock": 110,
+      "author": "George Orwell",
+      "genre": "Fiction",
+      "publicationYear": 1945,
+      "price": 7.99,
+      "authorid_ID": "39d6a8be-039e-11ef-8434-325096b39f47",
+      "address_ID": "5a1463fa-039e-11ef-b9eb-325096b39f47",
+      "authorid": {
+        "ID": "39d6a8be-039e-11ef-8434-325096b39f47",
+        "qualification": "Associate's Degree",
+        "DOB": "1970-12-20",
+        "age": 51
+      },
+      "address": {
+        "ID": "5a1463fa-039e-11ef-b9eb-325096b39f47",
+        "city": "Philadelphia",
+        "distric": null,
+        "state": "Pennsylvania",
+        "country": "United States",
+        "pincode": 19101
+      }
+    },
+    {
+      "ID": "1ed26e90-039e-11ef-9ed1-325096b39f47",
+      "title": "The Lord of the Rings",
+      "stock": 200,
+      "author": "J.R.R. Tolkien",
+      "genre": "Fantasy",
+      "publicationYear": 1954,
+      "price": 15.99,
+      "authorid_ID": "39d6a904-039e-11ef-81fe-325096b39f47",
+      "address_ID": "5a146440-039e-11ef-87c1-325096b39f47",
+      "authorid": {
+        "ID": "39d6a904-039e-11ef-81fe-325096b39f47",
+        "qualification": "High School Diploma",
+        "DOB": "1998-09-12",
+        "age": 23
+      },
+      "address": {
+        "ID": "5a146440-039e-11ef-87c1-325096b39f47",
+        "city": "San Antonio",
+        "distric": null,
+        "state": "Texas",
+        "country": "United States",
+        "pincode": 78201
+      }
+    },
+    {
+      "ID": "1ed26ed6-039e-11ef-8c4d-325096b39f47",
+      "title": "Pride and Prejudice",
+      "stock": 130,
+      "author": "Jane Austen",
+      "genre": "Romance",
+      "publicationYear": 1813,
+      "price": 14.99,
+      "authorid_ID": "39d6a940-039e-11ef-9d6b-325096b39f47",
+      "address_ID": "5a14647c-039e-11ef-b7f2-325096b39f47",
+      "authorid": {
+        "ID": "39d6a940-039e-11ef-9d6b-325096b39f47",
+        "qualification": "Master's Degree",
+        "DOB": "1982-03-18",
+        "age": 40
+      },
+      "address": {
+        "ID": "5a14647c-039e-11ef-b7f2-325096b39f47",
+        "city": "San Diego",
+        "distric": null,
+        "state": "California",
+        "country": "United States",
+        "pincode": 92101
+      }
+    },
+    {
+      "ID": "1ed26f12-039e-11ef-8f77-325096b39f47",
+      "title": "Harry Potter and the Sorcerer's Stone",
+      "stock": 180,
+      "author": "J.K. Rowling",
+      "genre": "Fantasy",
+      "publicationYear": 1997,
+      "price": 16.99,
+      "authorid_ID": "39d6a986-039e-11ef-abb3-325096b39f47",
+      "address_ID": "5a1464c2-039e-11ef-acb6-325096b39f47",
+      "authorid": {
+        "ID": "39d6a986-039e-11ef-abb3-325096b39f47",
+        "qualification": "Ph.D.",
+        "DOB": "1975-06-25",
+        "age": 46
+      },
+      "address": {
+        "ID": "5a1464c2-039e-11ef-acb6-325096b39f47",
+        "city": "Dallas",
+        "distric": null,
+        "state": "Texas",
+        "country": "United States",
+        "pincode": 75201
+      }
+    },
+    {
+      "ID": "1ed26f62-039e-11ef-905a-325096b39f47",
+      "title": "The Hobbit",
+      "stock": 140,
+      "author": "J.R.R. Tolkien",
+      "genre": "Fantasy",
+      "publicationYear": 1937,
+      "price": 13.99,
+      "authorid_ID": "39d6a9cc-039e-11ef-9fc2-325096b39f47",
+      "address_ID": "5a146508-039e-11ef-8aa7-325096b39f47",
+      "authorid": {
+        "ID": "39d6a9cc-039e-11ef-9fc2-325096b39f47",
+        "qualification": "Bachelor's Degree",
+        "DOB": "1991-08-07",
+        "age": 29
+      },
+      "address": {
+        "ID": "5a146508-039e-11ef-8aa7-325096b39f47",
+        "city": "San Jose",
+        "distric": null,
+        "state": "California",
+        "country": "United States",
+        "pincode": 95101
+      }
+    }
+  ]
+}
