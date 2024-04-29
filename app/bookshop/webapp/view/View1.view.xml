@@ -239,7 +239,7 @@
                             />
                             <Text
                                 id="idPhoneColValue"
-                                text="{author}"
+                                text="{genre}"
                             />
                             <Text
                                 id="idauthorColValue"

@@ -23,7 +23,7 @@ entity Address {
   key ID      : UUID;
       city    : String;
       distric : Date;
-      state   : Integer;
-      country  : String;
-      pincode : Integer
+      state   : String;
+      country : String;
+      pincode : Integer;
 }

@@ -1,8 +1,8 @@
 sap.ui.define(
     [
         "sap/ui/core/mvc/Controller",
-        'sap/m/MessageToast',
-        'sap/ui/Device'
+        // 'sap/m/MessageToast',
+        // 'sap/ui/Device'
     ],
     function (BaseController) {
         "use strict";
@@ -10,9 +10,9 @@ sap.ui.define(
         return BaseController.extend("com.app.bookshop.controller.Form", {
             onInit: function () {
                 const oRouter = this.getOwnerComponent().getRouter();
-                oRouter.attachRoutePatternMatched(this.onSelectBooks, this); 
+                oRouter.attachRoutePatternMatched(this.onBooks, this); 
             },
-            onSelectBooks: function(oEvent ){
+            onBooks: function(oEvent ){
                 const {bookId} = oEvent.getParameter("arguments");
                 // const sRouterName = oEvent.getParameter("name");
                 const oObjectPage = this.getView().byId("idBooksDetailsObject");

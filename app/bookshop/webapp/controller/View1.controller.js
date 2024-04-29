@@ -72,6 +72,8 @@ sap.ui.define([
                 
                 const { ID, author } = oEvent.getSource().getSelectedItem().getBindingContext().getObject();
                 const oRouter = this.getOwnerComponent().getRouter();
+            
+              
                 oRouter.navTo("RouteForm", {
                     bookId: ID,
                     authorName: author

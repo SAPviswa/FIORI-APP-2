@@ -11,6 +11,7 @@
         columnsL="3"
         columnsXL="4"
         class="AuthorForm"
+        binding="{authorid}"
     >
         <Label
             id="idQualificationLabel"
