@@ -17,11 +17,19 @@
     },
     "dataSources": {
       "mainService": {
-        "uri": "/odata/v4/catalog/",
+        "uri": "/BooksSRV/",
         "type": "OData",
         "settings": {
           "annotations": [],
           "odataVersion": "4.0"
+        }
+      },
+      "mainServiceV2": {
+        "uri": "/v2/BooksSRV/",
+        "type": "OData",
+        "settings": {
+          "annotations": [],
+          "odataVersion": "2.0"
         }
       }
     },
@@ -91,8 +99,19 @@
           "autoExpandSelect": true,
           "earlyRequests": true
         }
+      },
+      "ModelV2": {
+        "dataSource": "mainServiceV2",
+        "preload": true,
+        "settings": {
+          "synchronizationMode": "None",
+          "operationMode": "Server",
+          "autoExpandSelect": true,
+          "earlyRequests": true
+        }
       }
     },
+    
     "resources": {
       "css": [
         {
@@ -113,7 +132,7 @@
       "routes": [
         {
           "name": "RouteView1",
-          "pattern": "",
+          "pattern": ":?query:",
           "target": [
             "TargetView1"
           ]

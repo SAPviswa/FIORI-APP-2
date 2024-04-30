@@ -8,8 +8,7 @@
     xmlns="sap.m"
     xmlns:core="sap.ui.core"
 >
-<!-- For General data Fragment-->
-
+    <!-- For General data Fragment-->
     <u:ObjectPageLayout
         id="idBooksDetailsObject"
         upperCaseAnchorBar="true"
@@ -21,20 +20,10 @@
                         id="idBooksDetailsTitle"
                         text="{author}"
                     />
-                    </u:expandedHeading>
-                    <u:actions>
-                    <Button
-                        id="idBtnDelete"
-                        icon="sap-icon://delete"
-                        tooltip="Delete Employee"
-                        type="Negative"
-                        press="onDeleteEmployee"
-                    />
-                </u:actions>
-               
+                </u:expandedHeading>
             </u:ObjectPageDynamicHeaderTitle>
         </u:headerTitle>
-        <u:sections>
+        <u:sections >
             <u:ObjectPageSection
                 titleUppercase="true"
                 id="generalInfo"
@@ -42,16 +31,24 @@
             >
                 <u:subSections>
                     <u:ObjectPageSubSection id="idGeneralInfoSubSection">
-                      <core:Fragment
+                        <u:actions>
+                            <Button
+                                id="idBtnDelete"
+                                icon="sap-icon://delete"
+                                tooltip="Delete Employee"
+                                type="Negative"
+                                press="onDeleteBooks"
+                            />
+                        </u:actions>
+                        <core:Fragment
                             type="XML"
                             fragmentName="com.app.bookshop.fragments.Generalinformation"
                         />
-
                     </u:ObjectPageSubSection>
                 </u:subSections>
             </u:ObjectPageSection>
-<!-- For Author data Fragment -->
 
+            <!-- For Author data Fragment -->
             <u:ObjectPageSection
                 id="idAuthorSection"
                 title="Author Details"
@@ -59,15 +56,15 @@
             >
                 <u:subSections>
                     <u:ObjectPageSubSection id="idAuthorSubSection">
-                            <core:Fragment
-                                type="XML"
-                                fragmentName="com.app.bookshop.fragments.Author"
-                            />
+                        <core:Fragment
+                            type="XML"
+                            fragmentName="com.app.bookshop.fragments.Author"
+                        />
                     </u:ObjectPageSubSection>
                 </u:subSections>
             </u:ObjectPageSection>
 
-<!-- For Address data Fragment -->
+            <!-- For Address data Fragment -->
             <u:ObjectPageSection
                 id="idAddressSection"
                 title="Address Details"
@@ -75,10 +72,10 @@
             >
                 <u:subSections>
                     <u:ObjectPageSubSection id="idAddressSubSection">
-                            <core:Fragment
-                                type="XML"
-                                fragmentName="com.app.bookshop.fragments.Address"
-                            />
+                        <core:Fragment
+                            type="XML"
+                            fragmentName="com.app.bookshop.fragments.Address"
+                        />
                     </u:ObjectPageSubSection>
                 </u:subSections>
             </u:ObjectPageSection>

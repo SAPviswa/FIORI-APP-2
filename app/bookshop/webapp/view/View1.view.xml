@@ -161,7 +161,7 @@
             <Table
                 id="idBooksTable"
                 mode="SingleSelectMaster"
-                alternateRowColors="false"
+                alternateRowColors="true"
                 items="{/Books}"
                 selectionChange="onSelectBooks"
             >

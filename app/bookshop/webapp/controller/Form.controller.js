@@ -1,10 +1,12 @@
 sap.ui.define(
     [
-        "sap/ui/core/mvc/Controller",
+        // "sap/ui/core/mvc/Controller",
         // 'sap/m/MessageToast',
         // 'sap/ui/Device'
+        "./BaseController",
+        "sap/m/MessageBox"
     ],
-    function (BaseController) {
+    function (BaseController, MessageBox) {
         "use strict";
 
         return BaseController.extend("com.app.bookshop.controller.Form", {
@@ -14,12 +16,23 @@ sap.ui.define(
             },
             onBooks: function(oEvent ){
                 const {bookId} = oEvent.getParameter("arguments");
+                this.ID = bookId;
                 // const sRouterName = oEvent.getParameter("name");
                 const oObjectPage = this.getView().byId("idBooksDetailsObject");
                 
                 oObjectPage.bindElement(`/Books(${bookId})`, {
                      expand: 'authorid,address'
                 });
+            },
+            onDeleteBooks: async function(){
+                const oModel = this.getView().getModel("ModelV2");
+      
+                try {
+                  await this.deleteData(oModel, "/Books", this.ID);
+                  this.getRouter().navTo("RouteForm");
+                } catch (error) {
+                  MessageBox.error("Some Technical Issue");
+                }
             }
         });
     }

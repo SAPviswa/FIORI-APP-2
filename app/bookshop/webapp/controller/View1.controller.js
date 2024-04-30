@@ -1,14 +1,16 @@
 sap.ui.define([
-    "sap/ui/core/mvc/Controller",
+    "./BaseController",
     "sap/ui/model/Filter",
     "sap/ui/model/FilterOperator",
     "sap/m/Token",
-    "sap/ui/core/Fragment"
+    // "sap/ui/core/Fragment",
+    "sap/ui/model/json/JSONModel",
+    "sap/m/MessageBox"
 ],
     /**
      * @param {typeof sap.ui.core.mvc.Controller} Controller
      */
-    function (Controller, Filter, FilterOperator, Token, Fragment) {
+    function (Controller, Filter, FilterOperator, Token, JSONModel,MessageBox) {
         "use strict";
 
         return Controller.extend("com.app.bookshop.controller.View1", {
@@ -22,6 +24,17 @@ sap.ui.define([
                         return new Token({ key: text, text: text});
                     }
                 });
+                const oLocalModel = new JSONModel({
+                    title: "",
+                    stock: "",
+                    author: "",
+                    genre: "",  
+                });
+                this.getView().setModel(oLocalModel, "localModel");
+                this.getRouter().attachRoutePatternMatched(this.onBooksListLoad, this);
+            },
+            onBooksListLoad: function () {
+                this.getView().byId("idBooksTable").getBinding("items").refresh();
             },
             onGoPress: function () {
                 const oView = this.getView(),
@@ -71,9 +84,8 @@ sap.ui.define([
             onSelectBooks: function (oEvent) {
                 
                 const { ID, author } = oEvent.getSource().getSelectedItem().getBindingContext().getObject();
-                const oRouter = this.getOwnerComponent().getRouter();
-            
-              
+                // const oRouter = this.getOwnerComponent().getRouter();
+                const oRouter = this.getRouter();
                 oRouter.navTo("RouteForm", {
                     bookId: ID,
                     authorName: author
@@ -81,12 +93,14 @@ sap.ui.define([
             },
             onCreateButtonPress: async function () {
                 if (!this.oCreateBookDialog) {
-                    this.oCreateBookDialog = await Fragment.load({
-                        id: this.getView().getId(),
-                        name: "com.app.bookshop.fragments.CreateBooksDialog",
-                        controller: this
-                    });
-                    this.getView().addDependent(this.oCreateBookDialog);
+                    // this.oCreateBookDialog = await Fragment.load({
+                    //     id: this.getView().getId(),
+                    //     name: "com.app.bookshop.fragments.CreateBooksDialog",
+                    //     controller: this
+                    // });
+                    // this.getView().addDependent(this.oCreateBookDialog);
+                    this.oCreateBookDialog=await
+                    this.loadFragment("CreateBooksDialog")
                 }
 
                 this.oCreateBookDialog.open();
@@ -96,6 +110,22 @@ sap.ui.define([
                 if(this.oCreateBookDialog.isOpen()){
                     this.oCreateBookDialog.close()
                 }
+            },
+            onCreateBook: async function () {
+                
+                const oPayload = this.getView().getModel("localModel").getProperty("/"),
+                    oModel = this.getView().getModel("ModelV2");
+                    
+                try {
+                    await this.createData(oModel, oPayload, "/Books");
+                    this.getView().byId("idBooksTable").getBinding("items").refresh();
+                    this.oCreateBookDialog.close();
+                    
+                } catch (error) {
+                    this.oCreateBookDialog.close();
+                    MessageBox.error("Some technical Issue");
+                }
+
             }
         });
     });

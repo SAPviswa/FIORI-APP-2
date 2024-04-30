@@ -10,22 +10,22 @@
         contentWidth="30%"
         title="Add New Book"
     >
-        <beginButton>
+        <!-- <beginButton> -->
             <Button
                 id="idCreateButton"
                 text="Add"
                 press="onCreateBook"
                 type="Success"
             />
-        </beginButton>
-        <endButton>
+        <!-- </beginButton> -->
+        <!-- <endButton> -->
             <Button
                 id="idCancelButton"
                 text="Cancel"
                 press="onCloseDialog"
                 type="Negative"
             />
-        </endButton>
+        <!-- </endButton> -->
         <content>
             <form:SimpleForm
                 id="idBookDetailsForm"
@@ -45,13 +45,21 @@
                 columnsM="1"
                 singleContainerFullSize="false"
             >
+            <Label
+                    id="idLabel"
+                    text="ID"
+                />
+                <Input
+                    id="idInput"
+                    value="{localModel>/ID}"
+                />
                 <Label
                     id="idTitleLabel"
                     text="Title"
                 />
                 <Input
                     id="idTitleInput"
-                    value=""
+                    value="{localModel>/title}"
                 />
                 <Label
                     id="idStockLabel"
@@ -59,7 +67,7 @@
                 />
                 <Input
                     id="idStockInput"
-                    value=""
+                    value="{localModel>/stock}"
                 />
                 <Label
                     id="idAuthorLabel"
@@ -67,7 +75,7 @@
                 />
                 <Input
                     id="idAuthorInput"
-                    value=""
+                    value="{localModel>/author}"
                 />
                 <Label
                     id="idGenreLabel"
@@ -75,15 +83,15 @@
                 />
                 <Input
                     id="idGenreInput"
-                    value=""
+                    value="{localModel>/genre}"
                 />
-                <Label
+                <!-- <Label
                     id="idPublicationyearLabel"
                     text="Publication year"
                 />
                 <Input
                     id="idPublicationyearInput"
-                    value=""
+                    value="{localModel/publicationYear}"
                 />
                 <Label
                     id="idPriceLabel"
@@ -91,8 +99,8 @@
                 />
                 <Input
                     id="idPriceInput"
-                    value=""
-                />
+                    value="{localModel/price}"
+                /> -->
             </form:SimpleForm>
         </content>
     </Dialog>
