@@ -29,9 +29,10 @@ sap.ui.define(
       
                 try {
                   await this.deleteData(oModel, "/Books", this.ID);
-                  this.getRouter().navTo("RouteForm");
-                } catch (error) {
-                  MessageBox.error("Some Technical Issue");
+                  this.getRouter().navTo("RouteView1");
+                } 
+                catch (error) {
+                  MessageBox.error("Technical issue");
                 }
             }
         });

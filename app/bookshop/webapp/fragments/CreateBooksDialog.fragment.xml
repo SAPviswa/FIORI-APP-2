@@ -10,22 +10,7 @@
         contentWidth="30%"
         title="Add New Book"
     >
-        <!-- <beginButton> -->
-            <Button
-                id="idCreateButton"
-                text="Add"
-                press="onCreateBook"
-                type="Success"
-            />
-        <!-- </beginButton> -->
-        <!-- <endButton> -->
-            <Button
-                id="idCancelButton"
-                text="Cancel"
-                press="onCloseDialog"
-                type="Negative"
-            />
-        <!-- </endButton> -->
+
         <content>
             <form:SimpleForm
                 id="idBookDetailsForm"
@@ -34,15 +19,15 @@
                 labelSpanXL="3"
                 labelSpanL="3"
                 labelSpanM="3"
-                labelSpanS="12"
+                labelSpanS="2"
                 adjustLabelSpan="false"
-                emptySpanXL="4"
-                emptySpanL="4"
-                emptySpanM="4"
+                emptySpanXL="3"
+                emptySpanL="3"
+                emptySpanM="3"
                 emptySpanS="0"
                 columnsXL="1"
                 columnsL="1"
-                columnsM="1"
+                columnsM="2"
                 singleContainerFullSize="false"
             >
             <Label
@@ -103,5 +88,21 @@
                 /> -->
             </form:SimpleForm>
         </content>
+                <beginButton>
+            <Button
+                id="idCreateButton"
+                text="Add"
+                press="onCreateBook"
+                type="Success"
+            />
+        </beginButton>
+        <endButton>
+            <Button
+                id="idCancelButton"
+                text="Cancel"
+                press="onCloseDialog"
+                type="Negative"
+            />
+        </endButton>
     </Dialog>
 </core:FragmentDefinition>
