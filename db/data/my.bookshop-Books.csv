@@ -1,4 +1,4 @@
-ID,title,stock,author,genre,publicationYear,price,authorid_ID,address_ID
+ID,title,stock,author,genre,publicationYear,price,authorid_ID,addresses_ID
 1ed26b20-039e-11ef-9afd-325096b39f47,The Great Gatsby,100,F. Scott Fitzgerald,Fiction,1925,10.99,39d6a5a8-039e-11ef-8399-325096b39f47,5a1460ee-039e-11ef-9f21-325096b39f47
 1ed26cf6-039e-11ef-9771-325096b39f47,To Kill a Mockingbird,150,Harper Lee,Fiction,1960,12.99,39d6a76a-039e-11ef-a0bf-325096b39f47,5a1462b0-039e-11ef-84fd-325096b39f47
 1ed26d64-039e-11ef-af7d-325096b39f47,1984,120,George Orwell,Science Fiction,1949,9.99,39d6a7d8-039e-11ef-b43c-325096b39f47,5a14631e-039e-11ef-bfc0-325096b39f47

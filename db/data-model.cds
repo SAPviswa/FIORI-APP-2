@@ -6,10 +6,10 @@ entity Books {
       stock           : Integer;
       author          : String;
       genre           : String;
-      publicationYear : Integer;
+      publicationYear : String;
       price           : Decimal;
       authorid        : Association to Author;
-      address         : Association to Address;
+      addresses         : Association to Address;
 }
 
 entity Author {
@@ -22,8 +22,8 @@ entity Author {
 entity Address {
   key ID      : UUID;
       city    : String;
-      distric : Date;
+      distric : String;
       state   : String;
       country : String;
-      pincode : Integer;
+      pincode : String;
 }
