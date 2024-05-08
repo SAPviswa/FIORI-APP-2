@@ -12,11 +12,12 @@
         "@sap/xssec": "^3",
         "express": "^4",
         "ncu": "^0.2.1",
+        "npx": "^10.2.2",
         "passport": "^0.7.0"
     },
     "devDependencies": {
         "@cap-js/sqlite": "^1.6.0",
-        "@sap/cds-dk": "^7.9.1",
+        "@sap/cds-dk": "^7.8.2",
         "@sap/ux-specification": "^1.120.8",
         "rimraf": "^3.0.2"
     },
