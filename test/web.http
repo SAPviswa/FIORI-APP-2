@@ -4,7 +4,7 @@ POST http://localhost:4004/BooksSRV/Books HTTP/1.1
 Content-Type: application/json
 
     {
-      "ID"              : "98950f06-061b-11ef-89f2-325096b39f47",
+      "ID"              : "98950f06-061b-11ef-89f2-325096b39f48",
       "title"           : "Monster",
       "stock"           : 23,
       "author"          : "Reyansh",

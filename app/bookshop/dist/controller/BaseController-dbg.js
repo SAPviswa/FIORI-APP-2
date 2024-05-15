@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 sap.ui.define([
     "sap/ui/core/mvc/Controller",
     "sap/ui/core/Fragment"

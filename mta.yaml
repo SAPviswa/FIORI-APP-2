@@ -78,7 +78,6 @@ modules:
       builder: custom
       commands:
         - npm install
-        - npm ci
         - npm run build:cf
       supported-platforms:
         []
@@ -124,13 +123,16 @@ resources:
   - name: uaa_bookshop
     type: org.cloudfoundry.managed-service
     parameters:
-      config:
-        tenant-mode: dedicated
-        xsappname: bookshop-${org}-${space}
+      # config:
+      #   tenant-mode: dedicated
+      #   xsappname: bookshop-${org}-${space}
       path: ./xs-security.json
       service: xsuaa
       service-name: bookshop-xsuaa-service
       service-plan: application
+      config:
+        xsappname: bookshop-${org}-${space}
+        tenant-mode: dedicated
 parameters:
   deploy_mode: html5-repo
   enable-parallel-deployments: true

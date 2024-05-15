@@ -1,11 +1,11 @@
-ID,title,stock,author,genre,publicationYear,price,authorid_ID,addresses_ID
-1ed26b20-039e-11ef-9afd-325096b39f47,The Great Gatsby,100,F. Scott Fitzgerald,Fiction,1925,10.99,39d6a5a8-039e-11ef-8399-325096b39f47,5a1460ee-039e-11ef-9f21-325096b39f47
-1ed26cf6-039e-11ef-9771-325096b39f47,To Kill a Mockingbird,150,Harper Lee,Fiction,1960,12.99,39d6a76a-039e-11ef-a0bf-325096b39f47,5a1462b0-039e-11ef-84fd-325096b39f47
-1ed26d64-039e-11ef-af7d-325096b39f47,1984,120,George Orwell,Science Fiction,1949,9.99,39d6a7d8-039e-11ef-b43c-325096b39f47,5a14631e-039e-11ef-bfc0-325096b39f47
-1ed26dbe-039e-11ef-944b-325096b39f47,The Catcher in the Rye,80,J.D. Salinger,Fiction,1951,11.99,39d6a828-039e-11ef-92f8-325096b39f47,5a14636e-039e-11ef-b727-325096b39f47
-1ed26e04-039e-11ef-a03d-325096b39f47,Brave New World,90,Aldous Huxley,Science Fiction,1932,8.99,39d6a86e-039e-11ef-ac55-325096b39f47,5a1463b4-039e-11ef-9851-325096b39f47
-1ed26e4a-039e-11ef-aa92-325096b39f47,Animal Farm,110,George Orwell,Fiction,1945,7.99,39d6a8be-039e-11ef-8434-325096b39f47,5a1463fa-039e-11ef-b9eb-325096b39f47
-1ed26e90-039e-11ef-9ed1-325096b39f47,The Lord of the Rings,200,J.R.R. Tolkien,Fantasy,1954,15.99,39d6a904-039e-11ef-81fe-325096b39f47,5a146440-039e-11ef-87c1-325096b39f47
-1ed26ed6-039e-11ef-8c4d-325096b39f47,Pride and Prejudice,130,Jane Austen,Romance,1813,14.99,39d6a940-039e-11ef-9d6b-325096b39f47,5a14647c-039e-11ef-b7f2-325096b39f47
-1ed26f12-039e-11ef-8f77-325096b39f47,Harry Potter and the Sorcerer's Stone,180,J.K. Rowling,Fantasy,1997,16.99,39d6a986-039e-11ef-abb3-325096b39f47,5a1464c2-039e-11ef-acb6-325096b39f47
-1ed26f62-039e-11ef-905a-325096b39f47,The Hobbit,140,J.R.R. Tolkien,Fantasy,1937,13.99,39d6a9cc-039e-11ef-9fc2-325096b39f47,5a146508-039e-11ef-8aa7-325096b39f47
+ID,title,stock,author,genre,publicationYear,price,authorid_ID,addresses_ID,photo
+1ed26b20-039e-11ef-9afd-325096b39f47,The Great Gatsby,100,F. Scott Fitzgerald,Fiction,1925,10.99,39d6a5a8-039e-11ef-8399-325096b39f47,5a1460ee-039e-11ef-9f21-325096b39f47,./images/img (1).jpeg
+1ed26cf6-039e-11ef-9771-325096b39f47,To Kill a Mockingbird,150,Harper Lee,Fiction,1960,12.99,39d6a76a-039e-11ef-a0bf-325096b39f47,5a1462b0-039e-11ef-84fd-325096b39f47,./images/img (2).jpeg
+1ed26d64-039e-11ef-af7d-325096b39f47,1984,120,George Orwell,Science Fiction,1949,9.99,39d6a7d8-039e-11ef-b43c-325096b39f47,5a14631e-039e-11ef-bfc0-325096b39f47,./images/img (3).jpeg
+1ed26dbe-039e-11ef-944b-325096b39f47,The Catcher in the Rye,80,J.D. Salinger,Fiction,1951,11.99,39d6a828-039e-11ef-92f8-325096b39f47,5a14636e-039e-11ef-b727-325096b39f47,./images/img (4).jpeg
+1ed26e04-039e-11ef-a03d-325096b39f47,Brave New World,90,Aldous Huxley,Science Fiction,1932,8.99,39d6a86e-039e-11ef-ac55-325096b39f47,5a1463b4-039e-11ef-9851-325096b39f47,./images/img (5).jpeg
+1ed26e4a-039e-11ef-aa92-325096b39f47,Animal Farm,110,George Orwell,Fiction,1945,7.99,39d6a8be-039e-11ef-8434-325096b39f47,5a1463fa-039e-11ef-b9eb-325096b39f47,./images/img (6).jpeg
+1ed26e90-039e-11ef-9ed1-325096b39f47,The Lord of the Rings,200,J.R.R. Tolkien,Fantasy,1954,15.99,39d6a904-039e-11ef-81fe-325096b39f47,5a146440-039e-11ef-87c1-325096b39f47,./images/img (7).jpeg
+1ed26ed6-039e-11ef-8c4d-325096b39f47,Pride and Prejudice,130,Jane Austen,Romance,1813,14.99,39d6a940-039e-11ef-9d6b-325096b39f47,5a14647c-039e-11ef-b7f2-325096b39f47,./images/img (1).jpeg
+1ed26f12-039e-11ef-8f77-325096b39f47,Harry Potter and the Sorcerer's Stone,180,J.K. Rowling,Fantasy,1997,16.99,39d6a986-039e-11ef-abb3-325096b39f47,5a1464c2-039e-11ef-acb6-325096b39f47,./images/img (2).jpeg
+1ed26f62-039e-11ef-905a-325096b39f47,The Hobbit,140,J.R.R. Tolkien,Fantasy,1937,13.99,39d6a9cc-039e-11ef-9fc2-325096b39f47,5a146508-039e-11ef-8aa7-325096b39f47,./images/img (3).jpeg

@@ -35,8 +35,8 @@
         },
         "crossNavigation": {
             "inbounds": {
-                "Books Details-display": {
-                    "semanticObject": "Books Details",
+                "BooksDetails-display": {
+                    "semanticObject": "BooksDetails",
                     "action": "display",
                     "title": "{{flpTitle}}",
                     "subTitle": "{{flpSubtitle}}",

@@ -9,7 +9,8 @@ entity Books {
       publicationYear : String;
       price           : Decimal;
       authorid        : Association to Author;
-      addresses         : Association to Address;
+      addresses       : Association to Address;
+      photo           : LargeString;
 }
 
 entity Author {
